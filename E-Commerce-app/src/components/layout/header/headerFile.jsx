@@ -5,6 +5,7 @@ import MobileHeaderFileComponent from "./mobileHeader/mobileHeaderFile";
 import axios from "axios";
 import Grid from '@mui/material/Grid2';
 import ProductCards from "../../products/productsCard";
+import { Outlet } from "react-router-dom";
 
 
 
@@ -64,8 +65,7 @@ return(
         
 <Box>
 
-
-<ProductCards />
+<Outlet />
 
 </Box>
 
