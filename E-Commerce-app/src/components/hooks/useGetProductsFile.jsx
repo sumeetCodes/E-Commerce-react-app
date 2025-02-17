@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import axiosService from "../../utils/axiosInerceptor/axiosService";
 
 
 const useGetProduct = () => {
@@ -16,8 +17,14 @@ setLoading(false);
 
 }
 getProduct()
-    
-  })
+
+const passToken = async () => {
+  const userProfile = await axiosService.get("/api/v1/auth/profile")
+console.log(userProfile, "user profile");
+
+}
+   passToken() 
+  },[])
 
 
 return {products, loading}

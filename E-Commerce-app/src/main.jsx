@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ProductDetailsFileComponent from './components/products/productsDetailsFile.jsx';
 import ProductCards from './components/products/productsCard.jsx';
 import HeaderFileComponent from './components/layout/header/headerFile.jsx';
+import SignInFileComponent from './components/auth/signIn/signInFile.jsx';
 
 
 const route = createBrowserRouter([
@@ -14,7 +15,9 @@ const route = createBrowserRouter([
     children: [
      {path: "/", element: <ProductCards /> },   
     {path: "/product-detail/:product_id", element: <ProductDetailsFileComponent />},
+    
 ]},
+{path:"/signin", element: <SignInFileComponent />},
 
 
 ])

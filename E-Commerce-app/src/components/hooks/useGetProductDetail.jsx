@@ -22,7 +22,7 @@ getProduct()
   })
 
 
-return {products}
+return {products,loading}
 };
 
 
